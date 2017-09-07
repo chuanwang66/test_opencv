@@ -14,6 +14,11 @@ pip3.5 install matplotlib
 pip3.5 install opencv_python...whl
 ```
 
+opencv tutorial
+====
+
+* ...
+
 preview webcam in qt5
 ====
 
