@@ -29,7 +29,7 @@ def grab(cam, queue, width, height, fps):
         if queue.qsize() < 10:
             queue.put(frame)
         else:
-            print(queue.qsize())
+            print(queue.qsize()) #TODO now we should throw away the oldest frames
 
 class OwnImageWidget(QtWidgets.QWidget):
     def __init__(self, parent=None):
@@ -75,7 +75,7 @@ class MainWindow(QtWidgets.QWidget, Ui_Form):
     def update_frame(self):
         if not q.empty():
             self.startButton.setText('live')
-            frame = q.get()
+            frame = q.get()  #TODO blocking, may block UI-thread!
             img = frame["img"]
 
             img_height, img_width, img_colors = img.shape
