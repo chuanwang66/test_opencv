@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = cv2.imread('cat.png', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('image/mouse.jpg', cv2.IMREAD_GRAYSCALE)
 #IMREAD_GRAYSCALE: 0
 #IMREAD_COLOR: 1
 #IMREAD_UNCHANGED: -1
@@ -17,4 +17,4 @@ x2, y2 = 100, 100
 plt.plot([x1, x2], [y1, y2], 'c',  linewidth=5)
 plt.show()
 
-cv2.imwrite('cat_grey.png', img)
+cv2.imwrite('mouse_gray.jpg', img)
