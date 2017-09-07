@@ -16,3 +16,4 @@ pip3.5 install opencv_python...whl
 
 * preview_webcam_in_qt5
 illustrate how to preview a webcam in qt5 widget:)
+![](https://raw.githubusercontent.com/chuanwang66/test_opencv/master/preview_webcam_in_qt5/webcam_in_qt5.png)
