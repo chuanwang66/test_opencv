@@ -103,7 +103,7 @@ q = queue.Queue()
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
 
-    capture_thread = threading.Thread(target=grab, args = (1, q, 1920, 1080, 15))
+    capture_thread = threading.Thread(target=grab, args = (0, q, 1920, 1080, 15))
 
     main_view = MainWindow()
     main_view.show()
